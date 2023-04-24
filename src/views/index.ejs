@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<%- include('./layouts/head'); %>
+<body>
+    <div id="sidebar">
+        <h2>Cooper</h2>
+        <ul>
+            <li><a href="/mi_actividad" target="view">Inicio</a></li>
+            <li><a href="mi_rendimiento.html" target="view">Mi rendimiento</a></li>
+            <li><a href="mi_horario_y_actividades.html" target="view">Mi horario y actividades</a></li>
+            <li><a href="informes.html" target="view">Informes</a></li>
+            <li><a href="administrador.html" target="view">Administrador</a></li>
+            <li><a href="#" onclick="cerrar_sesion()">Cerrar sesión</a></li>
+        </ul>
+    </div>
+
+    <div class="user" style="display: flex; align-items: center;">
+        <div id="user"></div>
+        <div style="margin-left: 10px;">
+            <span class="material-symbols-outlined">
+                person
+            </span>
+        </div>
+    </div>
+    <div id="content">
+        <iframe id="if" name="view" src="mi_actividad.html" frameborder="0" width="98%" height="1000px"></iframe>
+    </div>
+</body>
+
+</html>
